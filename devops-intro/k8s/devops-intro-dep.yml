@@ -17,3 +17,4 @@ spec:
       containers:
       - image: myimage
         name: myimage
+        imagePullPolicy: Never

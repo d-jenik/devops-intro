@@ -1,4 +1,4 @@
-apiVersion: apps/v1
+apiVersion: v1
 kind: Service
 metadata:
   labels:
@@ -6,8 +6,7 @@ metadata:
   name: devops-intro
 spec:
   selector:
-    matchLabels:
-      app: devops-intro
+    matchLabels: devops-intro
   ports:
     - protocol: TCP
       port: 8080
