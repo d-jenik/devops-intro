@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: devops-intro
+  name: devops-intro
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: devops-intro
+  template:
+    metadata:
+      labels:
+        app: devops-intro
+    spec:
+      containers:
+      - image: myimage
+        name: myimage
