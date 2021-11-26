@@ -18,3 +18,5 @@ spec:
       - image: myimage
         name: myimage
         imagePullPolicy: Never
+        ports:
+          - containerPort: 8000
